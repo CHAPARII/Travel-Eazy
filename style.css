@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 15%;
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 1.6rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+
+.hero{
+    position: relative;
+    height: 1000px;
+    overflow: hidden;
+}
+.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.hero-content h1{
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+}
+.hero-content p{
+    font-family: "Dongle-regular";
+    font-size: 1.8rem;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.hero-button:hover{
+    background-color: #333;
+}
+.destinations{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
+}
+.destinations h2{
+    margin-bottom: 40px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 2rem;
+}
+.destination-item p{
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+.about{
+    text-align: center;
+    padding: 100px;
+}
+.about h3{
+   font-family: "Dongle-bold";
+   font-size: 3rem;
+}
+.about p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-member img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+.team-member h4{
+    font-family: "Dongle-bold";
+    font-size: 2rem;
+}
+.contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+.form button:hover{
+    background-color: #333;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+footer p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+}
+@media (max-width: 1177px) {
+    .hero-content h1{
+        line-height: 0.7;
+    }
+    .hero-content p{
+        margin-top: 0;
+        line-height: 0.8;
+    }
+    .destinations img{
+        height: 250px;
+    }
+    input, textarea{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content h1{
+        margin-bottom: 5px;
+    }
+    .team-member img{
+        width: 200px;
+        height: 200px;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+}
+@media (max-width:603px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:430px){
+    header{
+        display: none;
+    }
+    .hero-content h1{
+        font-size: 1.3rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .hero-button{
+        padding: 6px 22px;
+        font-size: 16px;
+    }
+    .destinations{
+        font-size: 1.5rem;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .about{
+        padding: 0 30px;
+    }
+    .team-member img{
+        width: 250px;
+        height: 250px;
+    }
+}
+  
+/* General styling for the destinations section */
+/* Destinations Section */
+#destinations {
+    padding: 40px;
+    background-color: #f9f9f9; /* Optional: For better contrast */
+}
+
+#destinations h2 {
+    font-size: 2.5em; /* Larger title */
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Destination Item */
+.destination-item {
+    margin-bottom: 40px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust image size */
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 20px;
+}
+
+.destination-item h3 {
+    font-size: 3.2em; /* Significantly larger headings */
+    margin: 15px 0;
+    color: #333;
+}
+
+.destination-item p {
+    font-size: 3.5em; /* Larger paragraph text */
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Optional: Hover effect for destination item */
+.destination-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Hover effect */
+.destination-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+<div class="destination-item">
+    <img src="images/destination-2.jpg" alt="" />
+    <h3>Nalanda University</h3>
+    <p>
+        Explore Nalanda, the world's oldest university—where ancient ruins tell tales
+        of wisdom, culture, and a glorious past!
+    </p>
+</div>
+
+<style>
+/* Base styling for the destination item */
+.destination-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for the specific section */
+.destination-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    background-color: #fff; /* Changes background color on hover */
+}
+
+/* Image styling */
+.destination-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Styling for the title */
+.destination-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Styling for the description */
+.destination-item p {
+    font-size: 1rem;
+    color: #666;
+}
+</style>
+
+<style>
+/* Styling the destinations section */
+.destinations {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the grid to display items vertically */
+.destination-grid {
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  gap: 20px; /* Adds space between items */
+}
+
+/* Styling each destination item */
+.destination-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for each destination item */
+.destination-item:hover {
+  transform: scale(1.05); /* Slightly enlarges the section */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  background-color: #fff; /* Slightly changes background color */
+}
+
+/* Styling the images */
+.destination-item img {
+  width: 100%;
+  max-width: 400px; /* Optional: Limit the image width */
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Styling the titles */
+.destination-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Styling the descriptions */
+.destination-item p {
+  font-size: 1rem;
+  color: #666;
+}
+</style>
+
+/* Wrapper for horizontal scrolling */
+.team-members-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of team members */
+    padding: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Styling the team members */
+.team-members {
+    display: flex; /* Arrange items in a row */
+    gap: 40px; /* Larger spacing between members */
+}
+
+.team-member {
+    flex: 0 0 auto; /* Prevent shrinking, keep fixed width */
+    text-align: center; /* Center align content */
+    max-width: 300px; /* Increased card width */
+}
+
+.team-member img {
+    width: 150px; /* Larger image size */
+    height: 150px; /* Make image circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    margin: 10px 0;
+    font-size: 2em; /* Increased font size for names */
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1.2em; /* Larger font size for descriptions */
+    color: #666;
+    line-height: 1.4; /* Added line height for better readability */
+}
+ yoyoyo
+
+ .team-member p {
+    color: lightcoral; /* Light red color for "Team Leader" text */
+    font-size: 1.2em;  /* Optional: Adjust the font size if needed */
+    font-style: italic; /* Optional: To make it stand out */
+}
+
+/* General styling updates for more interactive, engaging effects */
+.destination-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;  /* Rounded corners */
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.destination-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the item on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+    background-color: #fff; /* Lighter background on hover */
+    cursor: pointer;  /* Pointer cursor to indicate it's clickable */
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.destination-item:hover img {
+    transform: scale(1.1); /* Zooms image slightly */
+}
+
+.destination-item h3 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    color: #333;
+    transition: color 0.3s ease; /* Text color transition */
+}
+
+.destination-item:hover h3 {
+    color: #ff7f50; /* Change title color on hover */
+}
+
+.destination-item p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    transition: color 0.3s ease; /* Text color transition */
+}
+
+.destination-item:hover p {
+    color: #ff7f50; /* Change description color on hover */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow to images */
+}
+
+.team-member h4 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1.3rem;
+    color: #666;
+    font-style: italic;
+    font-weight: 600;
+    color: lightcoral;  /* Light red for "Team Leader" text */
+}
+
+.team-members-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.team-members {
+    display: flex;
+    gap: 40px;
+    transition: all 0.3s ease;
+}
+
+.team-member {
+    flex: 0 0 auto;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.team-members-wrapper:hover .team-members {
+    transform: translateX(-10px); /* Slight scroll effect on hover */
+}
+
+<section class="hero">
+  <div class="hero-image">
+    <video autoplay loop muted>
+      <source src="images/videoplayback.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="hero-content">
+    <h1>Welcome to Our Travel Website</h1>
+    <p>Discover amazing destinations and book your next trip with us.</p>
+    <a href="#" class="hero-button">Book Now</a>
+  </div>
+</section>
+.logo-image {
+    width: 800px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .destination-item {
+    text-align: center; /* Center-align the content */
+    max-width: 1000px; /* Increased width for the section */
+    margin: auto; /* Center the section horizontally */
+    padding: 20px; /* Optional: Add some padding for spacing */
+}
+
+.destination-video {
+    width: 100%; /* Make the video responsive to the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+.destination-item {
+    text-align: center; /* Center-align the content */
+    max-width: 1000px; /* Wider section */
+    margin: auto; /* Center the section horizontally */
+    padding: 20px; /* Inner spacing */
+    margin-bottom: 40px; /* Increase space below each section */
+}

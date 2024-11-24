@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and typography styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation styles */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Attractions section */
+.attraction {
+    margin-bottom: 2rem;
+}
+
+.attraction img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+/* Gallery section */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials section */
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Map section */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
