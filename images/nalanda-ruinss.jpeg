@@ -1,0 +1,654 @@
+
+	
+<script type="text/javascript">
+function add_file()
+{
+ 
+ $("#file_div").append("<div><input type='file' name='my_file[]'><input type='button' class='btn btn-danger' value='Remove' onclick=remove_file(this);></div>");
+}
+function remove_file(ele)
+{
+ $(ele).parent().remove();
+}
+</script>
+
+<!doctype html>
+		<html lang="en">
+    	<head>
+		  <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>"Must See" Indian Heritage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		
+		 <!-- CSS -->
+		          <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+	      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One" type='text/css'>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+        
+        <!-- Footer slider -->
+        <link rel="stylesheet" type="text/css" href="jcarousel/style.css">
+		<link rel="stylesheet" type="text/css" href="jcarousel/jcarousel.responsive.css">
+		<link rel="stylesheet" href="css/slide.css">
+        
+        
+		<!-- Favicon and touch icons -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- google map -->
+		 <script src="https://maps.google.co.in/maps/api/js?sensor=false"></script>
+		 <script type="text/javascript" src="js/jQuery v3.4.1.js"></script>
+		 <script language="javascript">
+			function setVisibility(id,btnval) {
+			if(document.getElementById("btn"+btnval).value=='-'){
+			document.getElementById("btn"+btnval).value = '+';
+			document.getElementById(id).style.display = 'none';
+			}else{
+			document.getElementById("btn"+btnval).value = '-';
+			document.getElementById(id).style.display = 'inline';
+			}
+			}
+        </script>
+		<script>
+   $(document).ready(function()
+    {
+    
+    var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+    if (mobile==false) { 
+        
+        $('#mobilebook').css('display', 'none'); // OR you can use $('.navWrap').hide();
+    } 
+    
+ 
+    });
+	
+	
+</script>
+        
+	 	</head>
+  		
+        
+        <body >
+        <!--{Top Header Section Start		 	-->
+		<!--<style type='text/css'>
+	   .monumentclosed{
+		   background:yellow;
+		   font-size:15px;
+		   text-decoration: blink;
+		   font-weight:bold;
+		   padding:10px;
+		   color:red;
+		   text-align:center;
+		   margin-right:5px
+	   }	   
+	   </style>-->
+	  
+	  <!--<span style="text-align: center" ><p class="monumentclosed">"Please do not book any monument ticket till 31st March 2020 from following mentioned agancies:- MakeMytrip,Yatra,Kyazoonga,Insider,BookMyShow"..</p></span>--->
+       
+        <div class="row" style="/*border-top:5px solid #900;border-bottom:1px dashed #900*/background: #428bca;box-shadow: 0px 0px 10px grey;margin-bottom:1px;">
+            <div class="container">
+                <h2 style="font-family:'Fjalla One'; font-size:45px; color: Black;padding:8px 0;text-shadow: 1px 2px 4px #fff;" class="text-center" >
+                   "Must See" <wbr> Indian Heritage
+                </h2>
+				<div class=""></div>
+				<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a style="color:White;text-shadow: 0px 0px 0px White;" target="_blank" href="https://asi.paygov.org.in/">" To promote digital payment book through online portal for instant booking."</a></marquee>
+			      <!---<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a style="color:White;text-shadow: 0px 0px 0px White;" target="_blank" href="#">" The Red Fort, Delhi shall remain open for general visitors from sunrise to sunset. Thereafter, the Red Fort shall be opened for the visitors to the Sound and Light Show only. "</a></marquee>--->
+                              <!---<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a style="color:White;text-shadow: 0px 0px 0px White;" target="_blank" href="#">"Janjira Fort, Murd (Maharastra) is closed for general visitors due to foul climate condition from 26-05-2023 to 31-08-2023."</a></marquee>---->
+                              <!---<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a style="color:White;text-shadow: 0px 0px 0px White;" target="_blank" href="#">"The Red Fort, Delhi shall remain closed for the public and general visitors from 26th July, 2023 to 15th August, 2023 till end of lndependence Day Celebration, 2023."</a></marquee>--->
+
+
+
+
+
+
+
+				<form id="mobilebook" action="https://asi.payumoney.com/" method="post">
+							
+							<input type="hidden" name="key" value="517b70ef-8127-44b4-b88d-c3cff117c055">
+							<input class="btn btn-danger" type="submit" value="ONLINE BOOKING">
+							</form>
+           </div> 
+		   
+       </div>
+        
+        <!--Top Header Secction End}-->
+        
+        
+        <!--  Navigation Start-->
+        <div class="row">
+        	<div class="container">
+        		<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+			<div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="index.php">
+                <img src="assets/img/slider/asilogo.jpg" class="img-rounded" width="100" alt="asi-logo">
+                </a>      
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+		<p style="font-size:15px; color: Red;padding:5px 0; margin-right:5px">Click here for online ticket Booking <br></p>								
+							
+				
+				<li>				
+				<form action="https://asi.payumoney.com/" method="post">							
+				<input type="hidden" name="key" value="517b70ef-8127-44b4-b88d-c3cff117c055" />				
+				<input class="btn btn-danger" type="submit" value="ONLINE BOOKING" />
+				</form>                             
+				</li>
+
+
+                    <li class="active">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://asi.nic.in/" target="_blank">About ASI</a>
+                        </li>
+                        <!--<li>
+                            <a href="#"  data-toggle="modal" data-target="#myModal">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="#">Monument List</a>
+                        </li> -->
+                        <li>
+                            <a href="contact.php"><span>Contact</span></a>
+                        </li>						
+                </ul>         
+            </div>
+        </div>
+    </nav>
+	  
+           	</div>
+        </div>
+     	<!-- Navigation End -->
+    <!-- Begin #carousel-section -->
+    <div class="container">
+    <!--{ Slider Start Here  			-->
+                     <div class="col-lg-7 col-md-7">
+                    <div id="jssor_1" class="img-rounded" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+                            <!-- Loading Screen -->
+                            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                                <div style="position:absolute;display:block;background:url('assets/img/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                            </div>
+                            
+                            
+                            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+                                <div data-p="112.50" style="display: none;">
+                                    <img data-u="image" src="assets/img/slider/nalanda_mahavihar_1.jpg" />
+                                </div>
+                                <div data-p="112.50" style="display: none;">
+                                    <img data-u="image" src="assets/img/slider/nalanda_mahavihar_2.jpg" />
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        <!-- Bullet Navigator -->
+                        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+                            <div data-u="prototype" style="width:12px;height:12px;"></div>
+                        </div>
+                        
+                        
+                        <!-- Arrow Navigator -->
+                        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                        <a href="https://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+                        
+                
+                    </div>
+                 </div>
+                    
+                 <div class="col-lg-5 col-md-5">
+                 	<div class="">
+                 		<div class="jumbotron" >
+                                  <h3 class="panel-title" style=" font-family:'Fjalla One', sans-serif; background-color:royalblue;">
+                                        <u>Nalanda Mahavihar  </u>
+                                    </h3>       
+                                <h5 id="briefHistory">
+                                    <p> 
+                                    The archaeological site of Nalanda is located about 15 kms south of Biharsharif the district headquarter of Nalanda and about 95 kms south- east of Patna, the capital of Bihar state, well connected by rail and road. 
+                                    </p>
+                                    <p>
+                                      History of Nalanda goes back to the days of Mahavira and Buddha in the 6th Century BCE. It was the place of birth and nirvana of Sariputta, one of the most famous disciples of Buddha. But the place rose into prominence in 5th Century CE as a great monastic-cum-educational institution for oriental art and learning in the whole Buddhist world attracting students from distant countries including Hiuen Tsiang and I-Tsing from China. Various subjects like theology, grammar, logic, astronomy, metaphysics and philosophy were taught here. The institution was maintained by the revenue collected from the villages bestowed specifically for the purpose by the contemporary rulers as evident from inscriptions.
+                                    </p>
+                                    <p>
+                                      Nalanda Mahavihara, regarded as one of the greatest universities of ancient world, was founded by Kumaragupta I (CE 413-455) of the great Gupta dynasty. King Harshavardhana of Kannauj (CE 606-647) and the Pala kings of east India (8th-12th Century CE) continued to extend patronage to this centre. The decline of this great institution started in later Pala period but the final blow came in around CE 1200 by the invasion of Bakhtiyar Khalji who destroyed it by fire and the glory of Nalanda thus got burried under the soil.
+                                    </p>
+                                    <p>
+                                    Excavations conducted by Archaeological Survey of India during 1915-37 and 1974-82 have exposed the extensive remains of six major brick temples and eleven monasteries arranged on a systematic layout and spread over an area of more than a square kilometre. Basically a hundred feet wide passage runs north-south with the row of temples on the west and that of the monasteries on the east of it.  
+                                    </p>
+									<p>
+										The monasteries are quite identical in general layout and appearance. Central courtyard, row of cells all around with a common verandah, a secret chamber for keeping valuables, staircase for going to upper stories, kitchen, well, granary, single entrance and common place for prayer or meeting etc. are some characteristic features of almost all the monasteries at Nalanda.  The main Temple Site 3 in panchayatan style is the largest and most imposing structure at southern extremity of the row of temples and is surrounded by votive stupas. Originally it had four corner towers out of which two are in existence and decorated with rows of niches containing beautiful stucco images of Buddha and Bodhisattvas which are fine specimens of Gupta art. A temple different in character and not conforming to the general lay-out of the remains is represented by Temple Site 2. The interesting feature of this temple is the dado of two hundred and eleven sculptured panels over the moulded plinth. Another mound called 'Sarai Tila' very close to the monastery complex has revealed ruins of a temple with murals and feet portion of a colossal stucco image of Lord Buddha.Other than structures, the excavations have unearthed many sculptures and images in stone, bronze and stucco. Significant among the Buddhist sculptures are Buddha in different postures, Avalokitesvara, Manjusri, Tara, Prajnaparamita, Marichi, Jambhala etc and a few images are of Brahmanical deities like Vishnu, Siva-Parvati, Mahishasura-mardini, Ganesa, Surya etc. Other noteworthy discoveries of excavations include the murals, copper plates, inscriptions, sealings, plaques, coins, terracottas, potteries etc. The antiquities have been exhibited for the visitors in the site museum maintained by the Archaeological Survey of India.
+									</p>
+                                </h5>
+                                <hr>
+                          </div>     
+                 	</div>
+                 </div>   
+                 <!--  Slider End Here 				}-->  
+    </div>
+    <!-- End #carousel-section -->
+
+  <!-- Begin #services-section -->
+    
+        <!--<div class="container">
+            
+            <div class="jumbotron col-md-12" style="margin-top:20px;">
+                <h3 style="margin:-30px; font-family:Arial, Helvetica, sans-serif;text-align:center;"><u>Agra Fort, Agra </u></h3>&nbsp;
+                <h5 style="text-align:justify; font-size: 16px; font-family:Arial, Helvetica, sans-serif"> 
+                It is one of the most important and robustly built stronghold of the Mughals, embellished with number of richly decorated buildings encompassing the 
+                imposing Mughal style of art and architecture. It was constructed by the third Mughal emperor Akbar on the remains of an ancient site known as Badalgarh. 
+                Sikandar Lodi (1487-1517) was the first Sultan of Delhi to shift his capital from Delhi to Agra. After Sikandar Lodi who died in 1517, his son Ibrahim 
+                Lodi held the fort for 9 years until he was defeated and killed in the battle of Panipat in 1526. Several palaces, wells and a mosque were built in the 
+                fort during the Lodi period. 
+               </h5>
+              
+            </div>
+        
+        </div> -->     
+  
+    <!-- End #services-section -->
+<div class="container" style="padding-top:20px;">
+   
+  <div  class="col-sm-6 col-md-12"> 		
+        <table class="table table-responsive">
+        <tr>
+        <td colspan="2">
+        <span class="label label-info"  style="background-color:#4169e1 !important; font-size:15px;font-weight:bold;display:block;margin-bottom:5px; 
+        font-family:Arial, Helvetica, sans-serif;"> Monument Information</span>    
+        <table id="cpContent_tblPanel" class="table table-condensed">
+        
+         <th class="col-xs-4" style="font-size:10pt;">Approach</th><td class="col-xs-8">
+            
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Nearest Airport: </strong>Patna, 100Kms away</li>
+                <li class="list-group-item"><strong>Nearest Railway Station: </strong>Nalanda</li>
+            	<li class="list-group-item"><strong>Nearest Bus Station: </strong>Nalanda</li>
+            
+            </ul>
+            
+             </td>
+        </tr>
+        <tr>
+            <td class="col-xs-4" style="font-size:10pt;"><strong>Weather</strong></td>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Summers:</strong> Avg Temperature: 38°C</li>
+                <li class="list-group-item"><strong>Winters :</strong> Avg Temperature: 10°C  </li>
+				<li class="list-group-item"><strong>Average Rainfall :</strong> 1002mm </li>
+            
+            </ul>
+                 </td>
+        </tr>
+      
+        
+        <!--<tr>
+            <td class="col-xs-4" style="font-size:10pt;"><strong>Ticket Value</strong></td>
+            <td class="col-xs-8">
+            
+			<ul class="list-group">
+                <li class="list-group-item"><strong>Indian Visitors: </strong> Total Rs.20/- (Rs.10/- by ASI as Entry fee and Rs.10/- by ADA as Toll tax). </li>
+                <li class="list-group-item"><strong>Citizen of SAARC and BIMSTEC countries:</strong> Total Rs.510/- (Rs.10/- by ASI as Entry fee and Rs.500.00 by ADA as 
+                Toll tax). 
+                </li>
+                <li class="list-group-item"> <strong>Other Foreign Visitors: </strong> Total Rs.750/- (Rs.250/- by ASI as Entry fee and Rs.500/- by ADA as Toll tax).</li>
+                <li class="list-group-item"> <strong>Free entry:  </strong> Children below 15 years.</li>
+                <li class="list-group-item">  <a href="https://asi.payumoney.com/#/" target="_blank" class="btn btn-danger btn-xs"> Online Entry Ticket</a></li>
+            </ul>
+                          
+            </td>
+        </tr>-->
+		<tr>
+            <th class="col-xs-4" style="font-size:10pt;">Best Season to visit the monument </th>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"> October To February </li>
+            </ul>
+             </td>
+        </tr> 
+        <tr>
+            <th class="col-xs-4" style="font-size:10pt;">Opening Hours</th>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"> 09:00 AM - 05:00 PM </li>
+            </ul>
+             </td>
+        </tr> 
+         <tr>
+            <th class="col-xs-4" style="font-size:10pt;">Amenities available</th>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"> Garbage Bins. </li>
+                <li class="list-group-item">  Toilets</li>
+                <li class="list-group-item">  Ticket Booth.</li>
+				<li class="list-group-item">  Drinking water facilities</li>
+                <li class="list-group-item">  Wheel Chair</li>
+                <li class="list-group-item">  Ramp for Differently abled</li>
+				<li class="list-group-item">  Site Museum/display Shed</li>
+                <li class="list-group-item">  Signages CNB/PNB/Direction</li>
+				<li class="list-group-item">  Electricity</li>
+                <li class="list-group-item">  Braille</li>
+				<li class="list-group-item">  Short Films</li>
+                <li class="list-group-item">  Publication Counter</li>
+                <li class="list-group-item">  Drainage</li>
+				<li class="list-group-item">  Brochure/ Guide Book</li>
+            </ul>
+             </td>
+        </tr> 
+        <!-- 
+        <tr>
+            <th class="col-xs-4" style="font-size:10pt;">Accommodation Near the Monument</th>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"> <strong>UPTDC: </strong>Available 
+                <a href="https://online.up-tourism.com/booking/uptourism/index/hotel?cd=MQAzADkA " target="_blank" 
+                class="btn btn-danger btn-xs" style="font-weight:bold; height:26px;"> More..</a></li>
+                
+            </ul>
+             </td>
+        </tr> -->
+        </table>
+    </td>
+   
+   <td width="376" align="right">
+   
+   <span class="label tableLable" style="background-color:#4169e1 !important; font-size:15px;" >Location Along with Other &quot;Must See&quot; Monuments</span>
+    <!-- google map api -->
+    <div id="map" style="width: 570px; height: 470px;"></div>
+    <script type="text/javascript">
+    var locations = [
+	  ['Nalanda Mahavihar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 25.136667, 85.443889, 4]
+    ];
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 150,
+      center: new google.maps.LatLng(-39.92, 151.25),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    var infowindow = new google.maps.InfoWindow();
+    var marker, i;
+    var markers = new Array();
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+		map: map
+      });
+      markers.push(marker);
+	  
+	   infowindow.setContent(locations[i][0]);
+       infowindow.open(map, marker);
+	    
+	   
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          
+		  infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+		  
+        }
+		
+      })(marker, i));
+ 
+    }
+	
+	
+    function AutoCenter() {
+      //  Create a new viewpoint bound
+      var bounds = new google.maps.LatLngBounds();
+      //  Go through each...
+      $.each(markers, function (index, marker) {
+      bounds.extend(marker.position);
+      });
+      //  Fit these bounds to the map
+      map.fitBounds(bounds);
+    }
+    AutoCenter();
+  </script>
+  <!-- google map api -->
+    <!--</div>-->
+    <!--<span>
+    <a href="nearByTaj.php" target="_blank" class="btn btn-danger btn-xs" 
+    style="font-weight:bold; margin-top:20px;">	Near By monuments </a>
+   </span>-->
+   <span>
+    <a href="https://www.google.com/culturalinstitute/asset-viewer/nalanda/OAG47hZA1mCD9Q" target="_blank" class="btn btn-danger btn-xs" 
+    style="font-weight:bold;  margin-top:20px;">	Street View in 360<sup>o</sup> </a>
+   </span>
+   
+   <!--<span style="padding-top:20px;"><p class="label label-info tableLable"  style="background-color:#4169e1 !important; width:550px; margin-top:15px;">Location Of The Monument Along with Other Must See<br> Monuments</p>
+	</span>-->
+    
+    <table id="cpContent_tblPanel" class="table table-condensed" style="margin-top:20px;">
+        
+         <th class="col-xs-4" style="font-size:10pt;">Ticket Value</th><td class="col-xs-8">
+            
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Indian Visitors: </strong> Total Rs.25/-(Cash), Rs.20/-(Online) (For Indians, SAARC and BIMSTEC Countries). </li>
+                <li class="list-group-item"> <strong>Other Foreign Visitors: </strong> Total Rs.300/-(Cash), Rs.250/-(Online)</li>
+				<li class="list-group-item"> <strong>Ticket with Amenities: </strong> Total Rs.400/-</li>
+                <li class="list-group-item">  <a href="https://asi.payumoney.com/#/" target="_blank" class="btn btn-danger btn-xs" style="font-weight:bold; height:26px;">
+                Book Online Entry Ticket</a></li>
+            </ul>
+            
+             </td>
+        </tr>
+        <tr>
+            <td class="col-xs-4" style="font-size:10pt;"><strong>Contact Details</strong></td>
+            <td class="col-xs-8">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>B.M.Verma </strong></li>
+                <li class="list-group-item">Sr. Conservation Assistant<br> Phone- +91-9431708540 <br>E-mail: bmverma2108[at]gmail[dot]com</li>
+            
+            </ul>
+                 </td>
+        </tr>
+        <tr>
+            <td class="col-xs-4" style="font-size:10pt;">&nbsp;</td>
+            <td align="right" class="col-xs-8">
+            <ul class="list-group">
+                <li><a href="index.php" class="btn btn-danger btn-xs" style="font-weight:bold; height:26px;">	Back to Home </a></li>
+               
+            </ul>
+                 </td>
+        </tr>
+       </table>
+	</td>
+       
+  </tr>
+  
+ </table>
+ 
+</div>
+   
+  </div>
+  
+ <div class="row">   
+  	<div class="container">
+		<h3 class="heading text-center" style="color:#C00;"><strong>IMPORTANT WEBSITES</strong></h3>
+	
+  <div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><a href="https://www.incredibleindia.org/"  target="_blank"><img src="assets/img/footer-slider/incredibleindia.png" 
+                        class="footerSlider" alt="Image 1"></a></li>
+                        <li><a href="https://india.gov.in/"  target="_blank" ><img src="assets/img/footer-slider/india-gov-img.png" 
+                        class="footerSlider" alt="Image 2"></a></li>
+                        <li><a href="https://www.irctctourism.com/"  target="_blank" ><img src="assets/img/footer-slider/irctc-tourism.png" 
+                        class="footerSlider" alt="Image 3"></a></li>
+                        <li><a href="www.tourism.gov.in/"  target="_blank" ><img src="assets/img/footer-slider/ministry-of-tourism.png" 
+                        class="footerSlider" alt="Image 4"></a></li>
+                        <li><a href="www.up.gov.in"  target="_blank" ><img src="assets/img/footer-slider/up-portal.png" class="footerSlider" 
+                        alt="Image 5"></a></li>
+                        <li><a href="https://indianvisaonline.gov.in/"  target="_blank" ><img src="assets/img/footer-slider/visa-online.png" 
+                        class="footerSlider" alt="Image 6"></a></li>
+                        
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <!--<p class="jcarousel-pagination"></p>-->
+            </div>
+        </div>
+ 	</div> 
+   </div> 
+     <!-- Footer -->
+    
+   <footer> 
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                    <p class="footer-contact"><strong>Office of the Director General</strong><br>
+Janpath, New Delhi - 110011  <br>
+                        Phone: 1.800.245.356 Fax: 1.800.245.357<br>
+                        Email: hello@LawOffice.org<br>
+                    </p>
+                </div>-->
+                <div class="col-md-12">
+                    <h3 style="font-size:18px; margin:5px 0px;"><i class="fa fa-external-link"></i> Important Links</h3>
+					<ul id="imp_link">
+                    <li> <a href="https://asi.nic.in/" target="_blank">  Archaeological Survey of India</a></li>
+                    <li> <a href="https://indiaculture.nic.in/" target="_blank"> Ministry Of Culture</a></li>
+                    <li> <a href="https://india.gov.in/" target="_blank" > National Portal</a></li>
+                    <!--<li> <a href="https://ncf.nic.in/" target="_blank"> NCF</a></li>-->
+                    <li> <a href="https://tourism.gov.in/" target="_blank"> Ministry of Tourism</a></li> 
+					</ul>
+                </div>
+             <!-- <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> Socialize</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group google-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                      <a href="#" class="btn-group linkedin">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                      <a href="#" class="btn-group twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                      <a href="#" class="btn-group facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+              </div>-->    
+        </div>
+      </div>
+    </footer>	
+    
+    <!--Copy right and Visitors counter-->
+    <div class="copyright text center" style="padding-top: 2px; padding-bottom: 2px;">
+        <p>&copy; Copyright 2016, <a href="#">Archaeological Survey of India, Government of India</a>. <!--Theme by 
+		<a href="https://themewagon.com/" target="_blank">ThemeWagon--></a></p>
+        
+        <!--Unique Counter-->
+        
+        <!-- hitwebcounter Code START -->
+            <!--<a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=6337923&style=0038&nbdigits=9&type=ip&initCount=0" 
+            title="Free track counters" Alt="Free track counters"   border="0" >
+            </a>                                        
+            <br/>
+            
+            <a href="https://www.hitwebcounter.com" title="Lovely Counter" target="_blank" 
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #707173; text-decoration: none ;">
+            <em>Visitors Counter</em>
+            </a>-->   
+		                            
+        
+        <!--Unique Counter-->
+        
+        
+        <!--Page Counter-->
+        
+        <!-- hitwebcounter Code START -->
+           
+        <!--<a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=6337925&style=0038&nbdigits=9&type=page&initCount=0" 
+        title="Free track counters" Alt="Free track counters"   border="0" >
+        </a>                                        <br/>
+        <a href="https://www.hitwebcounter.com" title="Lovely Counter" 
+        target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
+        font-size: 10px; color: #707173; text-decoration: none ;"><em>Visitors Counter</em>
+        </a>--> 
+		
+			
+			<!-- hitwebcounter Code START -->
+			
+			<img src="https://hitwebcounter.com/counter/counter.php?page=6406385&style=0038&nbdigits=9&type=page&initCount=1090" 
+			title="Visitors counter" Alt="Visitors counter"   border="0" >
+			                                        <br/>
+			<em>Visitors Counter                                        </em>
+			                        
+        
+        <!--Page Counter-->
+        
+        
+        
+        
+        
+    </div>    <!--Copy right and Visitors counter-->
+  
+
+    
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jcarousel/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="jcarousel/jcarousel.responsive.js"></script>
+    <script src="js/wow.min.js"></script>
+    
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script src="js/slide.js"></script>
+    
+    <script src="js/jquery.slimscroll.min.js"></script>
+    
+    
+    <script>
+      new WOW().init();
+    </script>
+    
+	<script type="text/javascript">
+    $(document).ready(function(){
+    $('.jcarousel').jcarouselAutoscroll({
+    interval: 1000
+    });
+    });
+	
+	
+	$('#carousel-1').carousel({
+	interval: 3000,
+	cycle: true
+	});
+	
+	$(function(){
+    $('#briefHistory').slimScroll({
+        height: '250px'
+    });
+	});
+    
+    </script>
+  </body>
+</html>
